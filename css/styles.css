@@ -63,7 +63,8 @@ div {color: #c1c1c1;}
 .portrait {
 	background-color: #212225;
 	border-radius: 50%;
-	border: 2px solid #0892d0;
+	border: 2px solid #fff;
+	/*border: 2px solid #0892d0;*/
 	height: 138px;
 	margin: 50px auto 80px auto;
 	width: 138px;
