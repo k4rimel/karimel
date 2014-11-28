@@ -41,7 +41,7 @@ div {color: #c1c1c1;}
 	left: 0;
 	min-height: 595px;
 	padding: 0 15px;
-	position: absolute;
+	position: fixed;
 	text-align: right;
 	top: 0;
 	width: 200px;
@@ -79,7 +79,7 @@ div {color: #c1c1c1;}
 	border-radius: 50%;
 	border: 8px solid #fff;
 	height: 138px;
-	margin: 50px auto 80px auto;
+	margin: 50px auto 20px auto;
 	width: 138px;
  }
  
@@ -91,11 +91,13 @@ div {color: #c1c1c1;}
  }
  
 .subtitle {
-	font-size: 2.06em;
+	font-size: 1em;
 	font-style: normal;
 	text-align: center;
-	color:#e1e1e1;
-	margin-bottom: 2em;
+	color: #e1e1e1;
+	margin-bottom: 1.3em;
+	letter-spacing: 0.68em;
+	text-indent: .68em;
  }
 .content {
 	z-index: 1;
