@@ -66,8 +66,7 @@ div {color: #c1c1c1;}
 .portrait {
 	background-color: #212225;
 	border-radius: 50%;
-	border: 2px solid #fff;
-	/*border: 2px solid #0892d0;*/
+	border: 6px solid #fff;
 	height: 138px;
 	margin: 50px auto 80px auto;
 	width: 138px;
@@ -98,7 +97,8 @@ div {color: #c1c1c1;}
  }
  .resume {
 	display: block;
-	background-color: #ccc;
+	/*background-color: #ccc;*/
+	background-color: #121314;
 	left: 0;
 	width: 50em;
 	min-height: 595px;
@@ -107,7 +107,7 @@ div {color: #c1c1c1;}
  }
  .cvBlock {
 	min-height: 5em;
-	background-color: #aaa;
+	/*background-color: #aaa;*/
 	width: 40em;
 	margin:0em 5em 1em;
 	color:#fff;
@@ -115,27 +115,31 @@ div {color: #c1c1c1;}
  .cvBlockHeader {
  	height: 4em;
 	color: #fff;
-	background-color: #555;
+	/*background-color: #555;*/
+	padding-left: 1em;
  }
  .cvBlockTitle {
 	display: inline-block;
 	color:#fff;
-	font-family: 'roboto';
+	font-family: 'robotoThin';
 	font-size: 2em;
 	line-height: 2em;
 	text-indent: .3em;
  }
  .icon {
  	display: inline-block;
- 	width: 3em;
- 	height: 100%;
- 	vertical-align: middle;
+ 	width: 1.3em;
+ 	height: 1.3em;
+ 	border-radius: 50%;
+ 	text-align: center;
+ 	line-height: 1.4em;
+ 	padding: 0.2em;
+ 	border: 2px solid #fff;
  }
  .fa {
  	color: #fff;
  }
-
  .cvBlockContent {
-	background-color: #333;
+	/*background-color: #333;*/
 	height: 8em;
  }
