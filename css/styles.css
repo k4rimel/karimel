@@ -77,10 +77,13 @@ div {color: #c1c1c1;}
 .portrait {
 	background-color: #212225;
 	border-radius: 50%;
-	border: 8px solid #fff;
+	border: 5px solid #fff;
+	/*border: 5px solid #0892d0;*/
 	height: 138px;
 	margin: 20px auto;
 	width: 138px;
+	background-image: url('../img/photo_bw.jpg');
+	background-position: 2px -1px;
  }
  
 .nav {padding-right: 15px;}
@@ -121,7 +124,7 @@ div {color: #c1c1c1;}
  }
  .cvBlock {
 	min-height: 5em;
-	/*background-color: #aaa;*/
+	background-color: #aaa;
 	width: 40em;
 	margin:0em 5em 3em;
 	color:#fff;
@@ -129,7 +132,7 @@ div {color: #c1c1c1;}
  .cvBlockHeader {
  	height: 4em;
 	color: #fff;
-	/*background-color: #555;*/
+	background-color: #555;
 	padding-left: 1em;
  }
  .cvBlockTitle {
@@ -187,6 +190,7 @@ div {color: #c1c1c1;}
  .jobTime>.unit {
  	font-size: .6em;
  	font-weight: bold;
+ 	font-family: 'robotoMedium';
  }
  .sectionText {
  	float: left;
@@ -198,4 +202,7 @@ div {color: #c1c1c1;}
  }
  .sectionLabel {
 	
+ }
+ .progLanguages{
+ 	
  }
