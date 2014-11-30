@@ -233,6 +233,7 @@ div {color: #c1c1c1;}
  	background-color: #fff;
  	position: relative;
  	left: 7em;
+ 	border-radius: .3em;
  }
  .chart {
  }
