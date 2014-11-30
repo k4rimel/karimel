@@ -123,16 +123,17 @@ div {color: #c1c1c1;}
 	color:#fff;
  }
  .cvBlock {
-	min-height: 5em;
-	background-color: #aaa;
+	/*min-height: 18em;*/
+	/*background-color: #aaa;*/
 	width: 40em;
 	margin:0em 5em 3em;
 	color:#fff;
+	overflow: auto;
  }
  .cvBlockHeader {
  	height: 4em;
 	color: #fff;
-	background-color: #555;
+	/*background-color: #555;*/
 	padding-left: 1em;
  }
  .cvBlockTitle {
@@ -159,13 +160,16 @@ div {color: #c1c1c1;}
  }
  .cvBlockContent {
 	/*background-color: #333;*/
-	height: 8em;
+	/*height: 8em;*/
 	margin-left: 5.59em;
 	margin-top: .5em;
+ 	overflow: auto;
+
  }
  .cvBlockContentSection {
- 	min-height: 5em;
+ 	/*min-height: 5em;*/
  	margin-bottom: .8em;
+ 	overflow: auto;
  }
  .ItemCircle {
 	display: inline-block;
@@ -203,6 +207,51 @@ div {color: #c1c1c1;}
  .sectionLabel {
 	
  }
- .progLanguages{
- 	
+ .skillsSection {
+ 	/*background-color: #222;*/
+ 	min-width: 22em;
+ 	/*min-height: 11em;*/
+ }
+ .skillsSection>.icon{
+ 	float: left;
+ 	font-size: 1.6em;
+ }
+ .skillsSection>.sectionText>.sectionTitle {
+ 	line-height: 3.3em;
+ }
+ .sectionCharts {
+ 	margin: 1em 0em 1em 2em;
+ 	font-size: 1em;
+ }
+ .skill {
+ 	float: left;
+ 	line-height: .5em;
+ }
+ .chartContainer {
+ 	margin-top: 1.5em;
+ 	width: 12em;
+ 	background-color: #fff;
+ 	position: relative;
+ 	left: 7em;
+ }
+ .chart {
+ }
+ .filling {
+ 	background-color: #555;
+ 	height: .5em;
+ }
+ .javaValue {
+ 	width: 4em;
+ } 
+ .cSharpValue {
+ 	width: 6em;
+ } 
+ .phpValue {
+ 	width: 9em;
+ } 
+ .javascriptValue {
+ 	width: 10em;
+ }
+ .htmlValue {
+ 	width: 10em;
  }
