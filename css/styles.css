@@ -226,6 +226,7 @@ div {color: #c1c1c1;}
  .skill {
  	float: left;
  	line-height: .5em;
+ 	color:#fff;
  }
  .chartContainer {
  	margin-top: 1.5em;
