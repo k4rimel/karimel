@@ -1,0 +1,14 @@
+<div class="blockContainer row topMar2" ng-repeat="block in section.blocks | orderBy:'sequence'" >
+	<div class="columns large-12 blockInnerContainer" ng-mouseleave="showBlockToolBar = false; hoverEditBlockTitle = false" ng-mouseover="showBlockToolBar = true; hoverEditBlockTitle = true">
+		<block-toolbar></block-toolbar>
+		<skills-block></skills-block>
+		<employment-block></employment-block>
+		<education-block></education-block>
+		<languages-block></languages-block>
+		<div class="row" ng-show="block.content.length">
+			<div class="columns large-11 large-offset-1">
+				<textarea class="editor" ng-blur="CvCtrl.update(block)">{{block.content}}</textarea>
+			</div>
+		</div>
+	</div>
+</div>

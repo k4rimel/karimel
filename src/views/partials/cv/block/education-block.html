@@ -1,0 +1,26 @@
+<div class="row" ng-mouseover="hoverEditBlockTitle = true" ng-mouseleave="hoverEditBlockTitle = false" ng-show="section.label == 'Education'">
+	<div class="columns large-12">
+		<div class="row large-collapse">
+			<div class="columns large-6 large-offset-1">
+				<input type="text"  class="editor blockTitleInput blockTitle" value="{{block.title}}" ng-blur="CvCtrl.update($event, block)">
+			</div>
+			<div class="columns large-1 dateInput dateFrom">
+				<input class="editor blockDateInput" type="text" id="datepicker" value="{{ block.dateFrom | myDateFormat }}" ng-blur="CvCtrl.update($event, block)">
+			</div>					
+			<div class="columns large-1 arrowDateContainer">
+				<i class="fa fa-long-arrow-right"></i>
+			</div>
+			<div class="columns large-3 dateInput dateTo" ng-hide="block.stillWorkingHere">
+				<input class="editor blockDateInput" type="text" id="datepicker" value="{{ block.dateTo | myDateFormat }}" ng-blur="CvCtrl.update($event, block)">
+			</div>
+			<div class="columns large-3 dateInput dateNow" ng-show="block.stillWorkingHere">
+				<input class="editor blockDateInput" type="text" id="datepicker" value="aujourd'hui" ng-blur="CvCtrl.update($event, block)">
+			</div>
+		</div>
+		<div class="row">
+			<div class="columns large-11 large-offset-1">
+				<input type="text"  class="editor blockCompanyInput blockCompany" value="{{block.company}}" ng-blur="CvCtrl.update($event, block)">
+			</div>
+		</div>
+	</div>
+</div>

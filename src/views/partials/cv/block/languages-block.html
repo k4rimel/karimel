@@ -1,0 +1,16 @@
+<div class="row" ng-show="section.label == 'Languages'">
+	<div class="columns large-6">
+		<input type="text"  class="editor blockTitleInput" value="{{block.title}}" ng-blur="CvCtrl.update($event, block);" class="skills blockTitle">
+	</div>
+	<div class="columns large-6">
+		<div class="row">
+			<div class="chartContainer">
+				<div class="block{{block.value}} blockValue"></div>
+			</div>
+		</div>
+		<div class="row">
+			<slider ng-show="showSlider == true" ng-model="block.value" min="10" max="100" step="10"></slider>
+			<a href="" ng-show="showSlider" ng-click="CvCtrl.update($event, block); showSlider = false" class="closeSliderBtn"><i class="fa fa-check-circle fa-2x"></i></a>
+		</div>
+	</div>
+</div>

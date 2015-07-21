@@ -1,10 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="cvBuilder">
 <head>
 	<meta charset="UTF-8">
 	<title>Karim EL ALLAME</title>
 	<link rel="stylesheet" href="css/vendor/font-awesome.min.css">
 	<link rel="stylesheet" href="css/styles.css">
+	<script type="text/javascript" src="src/lib/angular.min.js"></script>
+	<script type="text/javascript" src="src/lib/angular-route.min.js"></script>
+	<script type="text/javascript" src="src/app.js"></script>
+	
+	<!-- controllers -->
+	<script type="text/javascript" src="src/controllers/cvController.js"></script>
+	<!-- end controllers -->
+	<script type="text/javascript" src="src/utils/utils.js"></script>
+	<!-- factories -->
+	<script type="text/javascript" src="src/factories/userFactory.js"></script>
+	<script type="text/javascript" src="src/factories/cvFactory.js"></script>
+	<!-- end factories -->
+	<!-- directives -->
+	<script type="text/javascript" src="src/directives/section.js"></script>
+	<script type="text/javascript" src="src/directives/block.js"></script>
+	<script type="text/javascript" src="src/directives/toolbar.js"></script>
+	<script type="text/javascript" src="src/directives/blocks/languages.js"></script>
+	<script type="text/javascript" src="src/directives/blocks/education.js"></script>
+	<script type="text/javascript" src="src/directives/blocks/skills.js"></script>
+	<script type="text/javascript" src="src/directives/blocks/employment.js"></script>
+	<script type="text/javascript" src="src/directives/blocks/blockToolbar.js"></script>
+	<!-- end diectives -->
+	<!-- filters -->
+	<script type="text/javascript" src="src/filters/dateFilter.js"></script>
+	<!-- end filers -->
 </head>
 <body>
 	<div class="container">
@@ -30,7 +55,7 @@
 			
 			<!-- BEGIN RESUME -->
 
-				<div class="resume">
+				<div class="resume" ng-controller="CvController as CvCtrl">
 					<div class="cvBlock skills">
 						<div class="cvBlockHeader">
 							<!-- <div class="icon"> -->
@@ -107,7 +132,7 @@
 								<div class="sectionText">
 									<div class="sectionTitle">JUNIOR WEB DEVELOPER</div>
 									<div class="lineOne">CALLIMEDIA, Montpellier</div>
-									<div class="lineTwo">From 2014 to 2015</div>
+									<div class="lineTwo">2014 - 2016</div>
 								</div>
 							</div>
 							<div class="cvBlockContentSection">
@@ -118,7 +143,7 @@
 								<div class="sectionText">
 									<div class="sectionTitle">C# DEVELOPER INTERNSHIP</div>
 									<div class="lineOne">CONSTRUIRE EN LANGUEDOC, Montpellier</div>
-									<div class="lineTwo">From January 2013 to March 2013</div>
+									<div class="lineTwo">January 2013 - March 2013</div>
 								</div>
 							</div>							
 							<div class="cvBlockContentSection">
@@ -169,9 +194,8 @@
 					</div>
 				</div>
 			<!-- END RESUME -->
-
 		</div>
 	</div>
-	<script type="text/javascript" src="js/app.js"></script>
+	
 </body>
 </html>

@@ -1,0 +1,9 @@
+<div class="list-group" ng-controller="ListController as ListCtrl">
+    <a class="list-group-item" ng-repeat="quiz in ListCtrl.quizzes" href="{{'/player/'+quiz.id}}">
+        <div class="quizListItem">
+            <h3>
+                {{quiz.title}}<em class="pull-center"></em><em class="pull-right">{{quiz.questions.length}} Questions</em>
+            </h3>
+        </div>
+    </a>
+</div>

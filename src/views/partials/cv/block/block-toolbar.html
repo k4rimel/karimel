@@ -1,0 +1,13 @@
+<div class="row blockToolBarContainer" ng-show="showBlockToolBar">
+	<div ng-class="{'large-1 columns large-offset-11': section.blocks.length <= 1, 'large-1 columns large-offset-10': section.blocks.length > 1}">
+		<span ng-click="showSlider = true" ng-show="hoverEditBlockTitle && !showSlider && section.label == 'Skills' || section.label == 'Languages'"><a href=""><i class="fa fa-pencil-square fa-2x"></i></a></span>
+	</div>
+	<div class="large-1 columns" ng-hide="blocks.length == 1">
+		<a href="" ng-click="CvCtrl.orderIncrement(section.blocks, block)" ng-show="block.sequence > 1">
+			<i class="fa fa-arrow-circle-up fa-2x"></i>
+		</a>		
+		<a href="" ng-click="CvCtrl.orderDecrement(section.blocks, block)" ng-show="block.sequence < section.blocks.length">
+			<i class="fa fa-arrow-circle-down fa-2x"></i>
+		</a>
+	</div>
+</div>
