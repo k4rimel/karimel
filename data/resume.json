@@ -1,0 +1,46 @@
+{
+    "cvId": "1",
+    "sections": [{
+        "label": "Skills",
+        "blocks": [{
+            "title": "HTML",
+            "sequence": 1,
+            "value": 80
+        }, {
+            "title": "JAVA",
+            "sequence": 2,
+            "value": 50
+        }]
+    }, {
+        "label": "Employment",
+        "blocks": [{
+            "title": "Front end developper",
+            "content": "lorem ipsum dolor\n",
+            "sequence": 1,
+            "dateFrom": "Jan 1, 2013 1:00:00 AM",
+            "dateTo": "Feb 7, 2013 1:00:00 AM",
+            "stillWorkingHere": true,
+            "company": "Google",
+            "value": 0
+        }]
+    }, {
+        "label": "Education",
+        "blocks": [{
+            "title": "Baccalaureat",
+            "content": "lorem ipsum dolor\n",
+            "sequence": 1,
+            "dateFrom": "May 10, 2008 2:00:00 AM",
+            "dateTo": "Feb 12, 2011 1:00:00 AM",
+            "company": "Lycee Leon Blum",
+            "value": 0
+        }]
+    }, {
+        "label": "Languages",
+        "blocks": [{
+            "title": "Anglais",
+            "sequence": 1,
+            "value": 60
+        }]
+    }],
+    "title": "Karim's resume"
+}

@@ -18,10 +18,12 @@
       		return deferred.promise;
     	};
 		factory.get = function(userId) {
-			if(!factory.user.hasOwnProperty(userId)) {
-            	factory.user[userId] = makeRequest('/Users/getConnectedUser');
-			}
-			return factory.user[userId];
+			// if(!factory.user.hasOwnProperty(userId)) {
+   //          	factory.user[userId] = makeRequest('/Users/getConnectedUser');
+			// }
+			factory.user = $http.get('../data/user.json');
+			// return factory.user[userId];
+			return factory.user;
 		};
 
 		return factory;

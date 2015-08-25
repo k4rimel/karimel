@@ -11,7 +11,8 @@
 		resume.data = {};
 
 		resume.getData = function(userId) {
-		  	Cv.get(userId).then(function(data) {
+		  	Cv.get(userId).then(function(res) {
+		  		var data = res.data;
 				if (!utils.isEmpty(data)) {
 					if(!data.hasOwnProperty('title')) {
 						data["title"] = "Unnamed resume";
@@ -21,7 +22,8 @@
 		  	});
 		}
 		resume.getUser = function() {
-			User.get().then(function(user) {
+			User.get().then(function(res) {
+				var user = res.data;
 				if (!utils.isEmpty(user)) {
 			    	resume.user = user;
 		  			resume.getData(resume.user.id);
@@ -45,8 +47,8 @@
 			var data = $event.target.value;
 		};
 		resume.init = function() {
-			// resume.getUser();
 			console.log("init");
+			resume.getUser();
 			resume.getData();
 		};
 		resume.orderIncrement = function(blocks, block) {
