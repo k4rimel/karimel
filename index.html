@@ -32,30 +32,30 @@
 	<!-- end filers -->
 </head>
 <body>
-	<div class="container">
+	<div class="container" ng-controller="CvController as CvCtrl">
 		<div class="sideMenu">
 			<div class="smBlock portrait">
 				
 			</div>
 			<div class="title">
-				<div class="firstName">KARIM</div>
-				<div class="lastName">EL ALLAME</div>
+				<div class="firstName">{{CvCtrl.user.firstName.toUpperCase()}}</div>
+				<div class="lastName">{{CvCtrl.user.lastName.toUpperCase()}}</div>
 			</div>
-			<div class="subtitle">
-				DEVELOPER
+			<div class="job">
+				{{CvCtrl.user.job.toUpperCase()}}
 			</div>
-			<div class="nav">
+			<!-- <div class="nav">
 				<div class="smBlock menuItem">About</div>
 				<div class="smBlock menuItem">Work</div>
 				<div class="smBlock menuItem selected">Resume</div>
 				<div class="smBlock menuItem">Contact</div>
-			</div>
+			</div> -->
 		</div>
 		<div class="content">
 			
 			<!-- BEGIN RESUME -->
 
-				<div class="resume" ng-controller="CvController as CvCtrl">
+				<div class="resume">
 					<div class="cvBlock skills">
 						<div class="cvBlockHeader">
 							<!-- <div class="icon"> -->

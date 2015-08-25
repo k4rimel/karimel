@@ -26,7 +26,8 @@
 				var user = res.data;
 				if (!utils.isEmpty(user)) {
 			    	resume.user = user;
-		  			resume.getData(resume.user.id);
+		  			// resume.getData(resume.user.id);
+		  			console.log(resume.user);
 				};
 		  	});
 		}
