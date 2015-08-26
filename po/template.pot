@@ -4,6 +4,10 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Project-Id-Version: \n"
 
-#: index.html:65
+#: index.html:49
+msgid "{{CvCtrl.user.job.toUpperCase()}}"
+msgstr ""
+
+#: index.html:69
 msgid "SKILLS"
 msgstr ""

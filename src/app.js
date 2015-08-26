@@ -3,7 +3,7 @@
 
 	angular.module("cvBuilder", ["gettext"])
 		.run(function (gettextCatalog) {
-			gettextCatalog.currentLanguage = 'fr_FR';
+			gettextCatalog.currentLanguage = 'en_US';
 			gettextCatalog.debug = true;
 		});
 	
