@@ -67,6 +67,9 @@ body {
 .menuItem .fa {
   font-size: 1.8rem; }
 
+.menuItem.email {
+  font-size: 1.1rem; }
+
 .sm-hr {
   border: 1px solid #1c1c1f; }
 
@@ -116,7 +119,6 @@ body {
   transition-property: box-shadow; }
 
 .nav {
-  padding-right: 1em;
   text-align: left;
   padding-left: .5em; }
 
@@ -260,3 +262,6 @@ body {
 
   html {
     font-size: 52.5%; } }
+@media print {
+  html {
+    font-size: 42.5%; } }
