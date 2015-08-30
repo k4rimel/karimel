@@ -1,0 +1,262 @@
+@font-face {
+  font-family: 'robotoBold';
+  src: url("fonts/Roboto-Bold.ttf"); }
+
+@font-face {
+  font-family: 'roboto';
+  src: url("fonts/Roboto-Light.ttf"); }
+
+@font-face {
+  font-family: 'robotoMedium';
+  src: url("fonts/Roboto-Medium.ttf"); }
+
+@font-face {
+  font-family: 'robotoLight';
+  src: url("fonts/Roboto-Light.ttf"); }
+
+@font-face {
+  font-family: 'robotoThin';
+  src: url("fonts/Roboto-Thin.ttf"); }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-size: 14px;
+  font-size: 1.4rem;
+  padding: 0;
+  margin: 0; }
+
+/* =14px */
+h1 {
+  font-size: 24px;
+  font-size: 2.4rem; }
+
+body {
+  background-color: #242526;
+  font-family: 'robotoThin';
+  color: white; }
+
+.smBlock {
+  margin: 35px auto; }
+
+.nav.personal-info > .smBlock {
+  margin: 15px auto; }
+
+.sideMenu {
+  box-shadow: 5px 0px 15px #0a0a0a;
+  height: 100%;
+  position: fixed;
+  text-align: right;
+  background-color: #121314;
+  left: 0;
+  top: 0;
+  width: 12em;
+  color: #999999; }
+
+.menuItem {
+  cursor: pointer;
+  display: block;
+  font-size: 1.5rem;
+  font-family: roboto; }
+
+.menuItem a {
+  text-decoration: none;
+  color: inherit; }
+
+.menuItem .fa {
+  font-size: 1.8rem; }
+
+.sm-hr {
+  border: 1px solid #1c1c1f; }
+
+.row.container {
+  padding: 0;
+  margin: 0; }
+
+.firstName {
+  text-align: center;
+  font-family: 'robotoThin';
+  font-size: 3rem;
+  letter-spacing: 1.35rem;
+  text-indent: .72rem;
+  line-height: 3rem; }
+
+.lastName {
+  text-align: center;
+  font-family: 'robotoLight';
+  font-size: 2rem;
+  line-height: 3rem;
+  letter-spacing: .5rem; }
+
+.job {
+  font-style: normal;
+  text-align: center;
+  margin-bottom: 2em;
+  font-size: 1.2rem;
+  letter-spacing: .97rem;
+  text-indent: .6rem;
+  line-height: 1.2rem; }
+
+.portrait:hover {
+  box-shadow: 0px 0px 15px white; }
+
+.portrait {
+  cursor: pointer;
+  background-color: #212225;
+  border-radius: 50%;
+  border: 5px solid white;
+  height: 138px;
+  margin: 20px auto;
+  width: 138px;
+  background-image: url("../img/photo_bw.jpg");
+  background-position: -4px 0px;
+  transition-duration: 1s;
+  transition-timing-function: ease;
+  transition-property: box-shadow; }
+
+.nav {
+  padding-right: 1em;
+  text-align: left;
+  padding-left: .5em; }
+
+.etched-top {
+  border-top: 1px solid #000; }
+
+.nav.etched-top:before {
+  display: block;
+  content: ' ';
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 1px;
+  position: absolute;
+  background-color: #222326; }
+
+.nav.social {
+  bottom: 0; }
+
+.content {
+  display: block;
+  background-color: inherit;
+  width: 75%;
+  float: left;
+  margin-left: 13em;
+  padding: 1em; }
+
+.cvBlockTitle {
+  color: white;
+  font-family: "roboto";
+  font-size: 3rem;
+  text-indent: .3rem;
+  letter-spacing: .2rem; }
+
+.inline-el {
+  display: inline-block; }
+
+.icon {
+  width: 5.5rem;
+  height: 5.5rem;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 3.9rem;
+  padding: 0.2em;
+  border: 2px solid white;
+  font-size: 2.9rem; }
+
+.icon.title-icon {
+  width: 6.5rem;
+  height: 6.5rem;
+  line-height: 4.9rem; }
+
+.sectionTitle {
+  font-family: "robotoThin";
+  font-weight: bold;
+  font-size: 2rem;
+  color: white;
+  text-indent: 1rem; }
+
+.skill {
+  color: white;
+  font-family: robotoMedium; }
+
+.unit.skill {
+  width: 20%;
+  padding: 0 !important;
+  font-size: 3.5rem;
+  text-align: center; }
+
+.unit.chartContainer {
+  padding: 0;
+  margin-top: 1.3em;
+  width: 50%; }
+
+.frameworks-and-tools {
+  font-family: robotoMedium;
+  font-weight: underline; }
+
+.chartContainer {
+  background-color: #313131;
+  border-radius: .3em; }
+
+.skill > [class*=" devicon-"], [class^=devicon-] {
+  font-size: inherit; }
+
+.filling {
+  background-color: #555;
+  height: .5em; }
+
+.javaValue {
+  width: 40%;
+  background-color: #0A817F; }
+
+.cSharpValue {
+  width: 50%;
+  background-color: #39A6CD; }
+
+.phpValue {
+  width: 70%;
+  background-color: #DB4630; }
+
+.htmlValue {
+  background-color: #70A634;
+  width: 80%; }
+
+.javascriptValue {
+  width: 80%;
+  background-color: #BE9722; }
+
+.html {
+  color: #BCD762; }
+
+.javascript {
+  color: #FFCA30; }
+
+.php {
+  color: #F37052; }
+
+.cSharp {
+  color: #3FC8F2; }
+
+.java {
+  color: #10A9A6; }
+
+.gitValue {
+  background-color: #476371; }
+
+.git {
+  color: #476371; }
+
+@media only screen and (min-width: 10em) and (max-width: 35.5em) {
+  .content {
+    width: 100%;
+    margin: 0; }
+
+  .container {
+    padding: 0; }
+
+  .skillsSection {
+    margin-left: 4em; }
+
+  html {
+    font-size: 52.5%; } }

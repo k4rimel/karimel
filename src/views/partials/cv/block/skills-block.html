@@ -1,16 +1,59 @@
-<div class="row sectionLine" ng-show="section.label == 'Skills'">
-	<div class="columns large-6">
-		<input type="text"  class="editor blockTitleInput" value="{{block.title}}" ng-blur="CvCtrl.update($event, block)" class="skills blockTitle">
-	</div>
-	<div class="columns large-6">
-		<div class="row">
-			<div class="chartContainer">
-				<div class="block{{block.value}} blockValue"></div>
-			</div>
-		</div>
-		<div class="row">
-			<slider ng-show="showSlider == true" ng-model="block.value" min="10" max="100" step="10"></slider>
-			<a href="" ng-show="showSlider" ng-click="CvCtrl.update($event, block); showSlider = false" class="closeSliderBtn"><i class="fa fa-check-circle fa-2x"></i></a>
-		</div>
-	</div>			
-</div>
+					<div class="cvBlock skills">
+						<div class="cvBlockHeader">
+							<!-- <div class="icon"> -->
+								<i class="icon fa fa-bar-chart-o fa-2x"></i>
+							<!-- </div> -->
+							<div class="cvBlockTitle" translate>SKILLS</div>
+						</div>
+						<div class="cvBlockContent">
+							<div class="cvBlockContentSection">
+								<div class="skillsSection progLanguages">
+									<i class="icon fa fa-file-code-o"></i>
+									<div class="sectionText">
+										<div class="sectionTitle">PROGRAMMING LANGUAGES</div>
+										<div class="sectionCharts">
+											<div class="chart html">
+												<div class="skill html">HTML5/CSS3</div>
+												<div class="chartContainer">
+													<div class="filling htmlValue"></div>
+												</div>
+											</div>												<div class="chart javascript">
+												<div class="skill javascript">JAVASCRIPT</div>
+												<div class="chartContainer">
+													<div class="filling javascriptValue"></div>
+												</div>
+											</div>									
+											<div class="chart php">
+												<div class="skill php">PHP</div>
+												<div class="chartContainer">
+													<div class="filling phpValue"></div>
+												</div>
+											</div>
+											<div class="chart cSharp">
+												<div class="skill cSharp">C#</div>
+												<div class="chartContainer">
+													<div class="filling cSharpValue"></div>
+												</div>
+											</div>
+											<div class="chart java">
+												<div class="skill java">JAVA</div>
+												<div class="chartContainer">
+													<div class="filling javaValue"></div>
+												</div>
+											</div>
+										</div>
+									</div>
+									
+								</div>
+							</div>							
+							<div class="cvBlockContentSection">
+								<div class="skillsSection databases">
+									<i class="icon fa fa-database"></i>
+									<div class="sectionText">
+										<div class="sectionTitle">DATABASES</div>
+									</div>
+									
+								</div>
+							</div>
+						</div>
+					</div>
