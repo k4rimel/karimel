@@ -293,34 +293,34 @@ body {
 //   overflow: auto;
 // }
 
-// .ItemCircle {
-//   display: inline-block;
-//   width: 4.8rem;
-//   height: 4.55rem;
-//   border-radius: 50%;
-//   text-align: center;
-//   line-height: 1.4em;
-//   padding: 0em .5em .5em .5em;
-//   border: 1px solid #fff;
-//   background-color: #fff;
-//   float: left;
-// }
+.ItemCircle {
+  display: inline-block;
+  width: 4.8rem;
+  height: 4.55rem;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 1.4em;
+  padding: 0em .5em .5em .5em;
+  border: 1px solid #fff;
+  background-color: #fff;
+  float: left;
+}
 
-// .jobTime > {
-//   .number, .unit {
-//     text-align: center;
-//     color: $darkThemeBgColor;
-//   }
-//   .number {
-//     font-size: 1.5em;
-//     font-family: 'robotoBold';
-//   }
-//   .unit {
-//     font-size: .6em;
-//     font-weight: bold;
-//     font-family: 'robotoMedium';
-//   }
-// }
+.jobTime > {
+  .number, .unit {
+    text-align: center;
+    color: $darkThemeBgColor;
+  }
+  .number {
+    font-size: 1.5em;
+    font-family: 'robotoBold';
+  }
+  .unit {
+    font-size: .6em;
+    font-weight: bold;
+    font-family: 'robotoMedium';
+  }
+}
 
 // .sectionText {
 //   float: left;

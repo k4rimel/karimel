@@ -171,6 +171,29 @@ body {
   height: 6.5rem;
   line-height: 4.9rem; }
 
+.ItemCircle {
+  display: inline-block;
+  width: 4.8rem;
+  height: 4.55rem;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 1.4em;
+  padding: 0em .5em .5em .5em;
+  border: 1px solid #fff;
+  background-color: #fff;
+  float: left; }
+
+.jobTime > .number, .jobTime > .unit {
+  text-align: center;
+  color: #242526; }
+.jobTime > .number {
+  font-size: 1.5em;
+  font-family: 'robotoBold'; }
+.jobTime > .unit {
+  font-size: .6em;
+  font-weight: bold;
+  font-family: 'robotoMedium'; }
+
 .sectionTitle {
   font-family: "robotoThin";
   font-weight: bold;
