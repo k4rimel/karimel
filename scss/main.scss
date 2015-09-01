@@ -175,9 +175,9 @@ body {
     background-color: #212225;
     border-radius: 50%;
     border: 5px solid $darkThemeFontColor;
-    height: 138px;
-    margin: 20px auto;
-    width: 138px;
+    height: 14rem;
+    margin: 2rem auto;
+    width: 14rem;
     background-image: url("../img/photo_bw.jpg");
     background-position: -4px 0px;
     transition-duration: 1s;
@@ -452,9 +452,30 @@ body {
     html {
         font-size: 52.5%;
     }
+
 }
 @media print {
     html {
         font-size: 42.5%;
+        padding: 0;
+        margin: 0;
     }
+    .portrait{
+      background-size:14rem;
+    }
+    .icon.title-icon.print-icon.fa.fa-bar-chart-o.fa-2x.inline-el {
+        width: 6.5rem;
+        height: 6.5rem;
+        line-height: 4.9rem;
+        border-radius: 50%;
+        text-align: center;
+        padding: 0.2em;
+        border: 2px solid #fff;
+        font-size: 2.9rem;
+        color: red;
+    }
+   
+}
+@page {
+    margin: 0;
 }
