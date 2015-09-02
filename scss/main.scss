@@ -87,7 +87,7 @@ body {
     margin: 35px auto;
 }
 .nav.personal-info > .smBlock {
-    margin: 15px auto;
+    margin: 35px auto;
 }
 
 .sideMenu {
@@ -189,19 +189,19 @@ body {
   text-align: left;
   padding-left: .5em;
 }
-.etched-top {
-    border-top: 1px solid #000;
-}
-.nav.etched-top:before {
-    display: block;
-    content: ' ';
-    width: 100%;
-    top: 0;
-    left: 0;
-    height: 1px;
-    position: absolute;
-    background-color: #222326;
-}
+// .etched-top {
+//     border-top: 1px solid #000;
+// }
+// .nav.etched-top:before {
+//     display: block;
+//     content: ' ';
+//     width: 100%;
+//     top: 0;
+//     left: 0;
+//     height: 1px;
+//     position: absolute;
+//     background-color: #222326;
+// }
 .nav.social {
     bottom:0;
 }
@@ -437,6 +437,24 @@ body {
 .git {
     // color: #222F35;
     color: #476371; //gitvalue's color because too dark
+}
+.etched{
+    width: 100%;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    position: relative;
+    box-shadow: 1px 1px 2px -1px #000;
+}
+.etched:after{
+  content:'';
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  z-index:1000;   
+  border-radius:0;
+  border-top:1px solid rgba(255,255,255,0.1); 
 }
 @media only screen and (min-width: 10em) and (max-width: 35.5em) {
     .content {

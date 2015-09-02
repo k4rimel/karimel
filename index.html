@@ -41,28 +41,31 @@
 <body>
 	<div class="container equal-units row" ng-controller="CvController as CvCtrl">
 		<div class="sideMenu hide-small">
-			<div class="smBlock portrait">
-				
-			</div>
-			<div class="title">
-				<div class="firstName">{{CvCtrl.user.firstName.toUpperCase()}}</div>
-				<div class="lastName">{{CvCtrl.user.lastName.toUpperCase()}}</div>
-			</div>
-			<div class="job">
-				{{CvCtrl.user.job.toUpperCase()}}
+			<div class="sm-header etched">
+				<div class="smBlock portrait">
+					
+				</div>
+				<div class="title">
+					<div class="firstName">{{CvCtrl.user.firstName.toUpperCase()}}</div>
+					<div class="lastName">{{CvCtrl.user.lastName.toUpperCase()}}</div>
+				</div>
+				<div class="job">
+					{{CvCtrl.user.job.toUpperCase()}}
+				</div>
 			</div>
 			<!-- <hr class="sm-hr"> -->
-			<div class="nav etched-top personal-info">
+			<div class="nav etched personal-info">
 				<div class="smBlock menuItem age"><i class="fa fa-birthday-cake"></i> 26 yo</div>
 				<div class="smBlock menuItem location"><i class="fa fa-globe"></i> Montpellier, France</div><!-- <i class="fa fa-globe"></i> -->
 			</div>
 			<!-- <hr class="sm-hr"> -->
-			<div class="nav etched-top social">
+			<div class="nav etched social">
 				<div class="smBlock menuItem"><i class="fa fa-github"></i> <a target="_blank" href="http://github.com/keara34/">keara34</a></div>
 				<div class="smBlock menuItem"><i class="fa fa-twitter"></i> <a target="_blank" href="http://twitter.com/karim_elallame">@karim_elallame</a></div>
 				<div class="smBlock menuItem"><i class="fa fa-linkedin"></i> <a target="_blank" href="http://linkedin.com/pub/karim-el-allame/75/327/4">Linkedin</a></div>
 				<div class="smBlock menuItem email"><i class="fa fa-envelope"></i> <a target="_blank" href="mailto:karim.elallame@gmail.com">karim.elallame@gmail.com</a></div>
 			</div>
+			<div class="etched sm-footer"></div>
 		</div>
 		<div class="content">
 			
