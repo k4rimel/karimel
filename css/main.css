@@ -38,10 +38,7 @@ body {
   color: white; }
 
 .smBlock {
-  margin: 35px auto; }
-
-.nav.personal-info > .smBlock {
-  margin: 35px auto; }
+  margin: 1.3em auto; }
 
 .sideMenu {
   box-shadow: 5px 0px 15px #0a0a0a;
@@ -182,8 +179,7 @@ body {
   font-family: 'robotoMedium'; }
 
 .sectionTitle {
-  font-family: "robotoThin";
-  font-weight: bold;
+  font-family: "roboto";
   font-size: 2rem;
   color: white;
   text-indent: 1rem; }
@@ -263,8 +259,7 @@ body {
   width: 100%;
   border-top: 1px solid rgba(0, 0, 0, 0.2);
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-  position: relative;
-  box-shadow: 1px 1px 2px -1px #000; }
+  position: relative; }
 
 .etched:after {
   content: '';
@@ -308,6 +303,9 @@ body {
     padding: 0.2em;
     border: 2px solid #fff;
     font-size: 2.9rem;
-    color: red; } }
+    color: red; }
+
+  .smBlock {
+    margin: 3em auto; } }
 @page {
   margin: 0; }

@@ -84,10 +84,7 @@ body {
 // }
 
 .smBlock {
-    margin: 35px auto;
-}
-.nav.personal-info > .smBlock {
-    margin: 35px auto;
+    margin: 1.3em auto;
 }
 
 .sideMenu {
@@ -328,8 +325,7 @@ body {
 // }
 
 .sectionTitle {
-    font-family: $sectionTitleFontFamily;
-    font-weight: bold;
+    font-family: $cvBlockTitleFontFamily;
     font-size: $sectionTitleFontSize;
     color: $darkThemeFontColor;
     text-indent: 1rem;
@@ -443,7 +439,7 @@ body {
     border-top: 1px solid rgba(0, 0, 0, 0.2);
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
     position: relative;
-    box-shadow: 1px 1px 2px -1px #000;
+    // box-shadow: 1px 1px 2px -1px #000;
 }
 .etched:after{
   content:'';
@@ -491,6 +487,9 @@ body {
         border: 2px solid #fff;
         font-size: 2.9rem;
         color: red;
+    }
+    .smBlock {
+        margin: 3em auto;
     }
    
 }
