@@ -304,7 +304,7 @@ body {
 }
 
 .jobTime > {
-  .number, .unit {
+  .number, .time-unit {
     text-align: center;
     color: $darkThemeBgColor;
   }
@@ -312,7 +312,7 @@ body {
     font-size: 1.5em;
     font-family: 'robotoBold';
   }
-  .unit {
+  .time-unit {
     font-size: .6em;
     font-weight: bold;
     font-family: 'robotoMedium';
@@ -491,8 +491,81 @@ body {
     .smBlock {
         margin: 3em auto;
     }
-   
 }
 @page {
     margin: 0;
 }
+div.progress-container{
+  width: 7em;
+  height: 7em;
+  position:relative;
+}
+$progress: 42; 
+
+$color-active: #2ecc71;
+$color-inactive: #eee;
+$color-bg: #242526;
+$color-font: #eee;
+
+
+.progress {
+  background: $color-inactive;
+  border-radius: 50%;
+  position: absolute;
+  font-family: 'Lato', sans-serif;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  //box-shadow: 0px 0px 20px rgba(#000, 0.5);
+  border: 2px solid $color-bg;
+  overflow: hidden;
+  &:before {
+    content: $progress + "%";
+    text-align: center;
+    color: $color-font;
+    width: 90%;
+    height: 90%;
+    background: $color-bg;
+    position: absolute;
+    border-radius: 50%;
+    left: 5%;
+    top: 5%;
+    z-index: 1000;
+    //box-shadow: inset 0px 0px 20px rgba(#000, 0.5);
+    border: 2px solid $color-bg;
+    box-sizing: border-box;
+  }
+  .hide {
+    height: 100%;
+    width: 50%;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    background: $color-inactive;
+    z-index: 200;
+    transform-origin: left center;
+    $deg: (360 / 100) * $progress;
+    transform: rotate($deg + deg);
+  }
+  .active, .active2 {
+    width: 50%;
+    height: 100%;
+    background: $color-active;
+    position: absolute;
+    @if $progress > 50 {
+      z-index: 300
+    }
+    left: 50%;
+    top: 0;
+  }
+  @if $progress > 50 {
+    .active2 {
+      transform-origin: left center;
+      $deg: (360 / 100) * ($progress - 50);
+      transform: rotate($deg + deg);
+    }
+  }
+}
+

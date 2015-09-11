@@ -1,23 +1,18 @@
 @font-face {
   font-family: 'robotoBold';
   src: url("fonts/Roboto-Bold.ttf"); }
-
 @font-face {
   font-family: 'roboto';
   src: url("fonts/Roboto-Light.ttf"); }
-
 @font-face {
   font-family: 'robotoMedium';
   src: url("fonts/Roboto-Medium.ttf"); }
-
 @font-face {
   font-family: 'robotoLight';
   src: url("fonts/Roboto-Light.ttf"); }
-
 @font-face {
   font-family: 'robotoThin';
   src: url("fonts/Roboto-Thin.ttf"); }
-
 html {
   font-size: 62.5%; }
 
@@ -35,7 +30,7 @@ h1 {
 body {
   background-color: #242526;
   font-family: 'robotoThin';
-  color: white; }
+  color: #ffffff; }
 
 .smBlock {
   margin: 1.3em auto; }
@@ -99,13 +94,13 @@ body {
   line-height: 1.2rem; }
 
 .portrait:hover {
-  box-shadow: 0px 0px 15px white; }
+  box-shadow: 0px 0px 15px #ffffff; }
 
 .portrait {
   cursor: pointer;
   background-color: #212225;
   border-radius: 50%;
-  border: 5px solid white;
+  border: 5px solid #ffffff;
   height: 14rem;
   margin: 2rem auto;
   width: 14rem;
@@ -131,7 +126,7 @@ body {
   padding: 1em; }
 
 .cvBlockTitle {
-  color: white;
+  color: #ffffff;
   font-family: "roboto";
   font-size: 3rem;
   text-indent: .3rem;
@@ -147,7 +142,7 @@ body {
   text-align: center;
   line-height: 3.9rem;
   padding: 0.2em;
-  border: 2px solid white;
+  border: 2px solid #ffffff;
   font-size: 2.9rem; }
 
 .icon.title-icon {
@@ -167,13 +162,13 @@ body {
   background-color: #fff;
   float: left; }
 
-.jobTime > .number, .jobTime > .unit {
+.jobTime > .number, .jobTime > .time-unit {
   text-align: center;
   color: #242526; }
 .jobTime > .number {
   font-size: 1.5em;
   font-family: 'robotoBold'; }
-.jobTime > .unit {
+.jobTime > .time-unit {
   font-size: .6em;
   font-weight: bold;
   font-family: 'robotoMedium'; }
@@ -181,11 +176,11 @@ body {
 .sectionTitle {
   font-family: "roboto";
   font-size: 2rem;
-  color: white;
+  color: #ffffff;
   text-indent: 1rem; }
 
 .skill {
-  color: white;
+  color: #ffffff;
   font-family: robotoMedium; }
 
 .unit.skill {
@@ -309,3 +304,53 @@ body {
     margin: 3em auto; } }
 @page {
   margin: 0; }
+div.progress-container {
+  width: 7em;
+  height: 7em;
+  position: relative; }
+
+.progress {
+  background: #eee;
+  border-radius: 50%;
+  position: absolute;
+  font-family: 'Lato', sans-serif;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  border: 2px solid #242526;
+  overflow: hidden; }
+  .progress:before {
+    content: "42%";
+    text-align: center;
+    color: #eee;
+    width: 90%;
+    height: 90%;
+    background: #242526;
+    position: absolute;
+    border-radius: 50%;
+    left: 5%;
+    top: 5%;
+    z-index: 1000;
+    border: 2px solid #242526;
+    box-sizing: border-box; }
+  .progress .hide {
+    height: 100%;
+    width: 50%;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    background: #eee;
+    z-index: 200;
+    transform-origin: left center;
+    transform: rotate(151.2deg); }
+  .progress .active, .progress .active2 {
+    width: 50%;
+    height: 100%;
+    background: #2ecc71;
+    position: absolute;
+    left: 50%;
+    top: 0; }
+
+/*# sourceMappingURL=main.css.map */
