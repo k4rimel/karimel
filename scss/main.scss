@@ -291,32 +291,36 @@ body {
 // }
 
 .ItemCircle {
-  display: inline-block;
-  width: 4.8rem;
-  height: 4.55rem;
-  border-radius: 50%;
-  text-align: center;
-  line-height: 1.4em;
-  padding: 0em .5em .5em .5em;
-  border: 1px solid #fff;
-  background-color: #fff;
-  float: left;
+    display: inline-block;
+    width: 5.3rem;
+    height: 5.05rem;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 1.6em;
+    padding: 0em .5em 0.5em .5em;
+    border: 1px solid #fff;
+    background-color: #fff;
+    float: left;
+    margin-top: .7rem;
 }
 
 .jobTime > {
-  .number, .time-unit {
-    text-align: center;
-    color: $darkThemeBgColor;
-  }
-  .number {
-    font-size: 1.5em;
-    font-family: 'robotoBold';
-  }
-  .time-unit {
-    font-size: .6em;
-    font-weight: bold;
-    font-family: 'robotoMedium';
-  }
+    .number, .time-unit {
+        text-align: center;
+        color: $darkThemeBgColor;
+    }
+    .time-unit.months {
+        font-size: .7em;
+    }
+    .number {
+        font-size: 1.5em;
+        font-family: 'robotoMedium';
+    }
+    .time-unit {
+        font-size: 0.8em;
+        font-weight: bold;
+        font-family: 'roboto';
+    }
 }
 
 // .sectionText {
@@ -451,6 +455,9 @@ body {
   z-index:1000;   
   border-radius:0;
   border-top:1px solid rgba(255,255,255,0.1); 
+}
+.text-section-line {
+    text-indent: 1rem;
 }
 @media only screen and (min-width: 10em) and (max-width: 35.5em) {
     .content {
